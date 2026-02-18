@@ -1,9 +1,10 @@
 {
-  "title": "アイドルマスターツアーズ設置店舗マップ",
-  "description": "アイドルマスターツアーズ設置店舗マップです",
+  "title": "GiGO店舗マップ",
+  "description": "GiGO店舗マップです",
   "form_url": "",
   "logo_image_url": "https://geoloniamaps.github.io/pwamap/icon-pwamap.svg",
   "background_image_url": "https://geoloniamaps.github.io/pwamap/geolonia_bgimage_1920_1080.png",
   "primary_color": "#d2691e",
   "orderby": "distance"
+
 }
