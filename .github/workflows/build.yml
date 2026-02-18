@@ -32,7 +32,9 @@ jobs:
       run: pip install -r requirements.txt
 
     - name: Run Python
-      run: python gigo_get.py
+      env:
+        PYTHONUNBUFFERED: "1"
+      run: python -u gigo_get.py
       
     - name: Set Last Update
       id: set_last_update
