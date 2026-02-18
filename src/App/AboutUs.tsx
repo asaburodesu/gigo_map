@@ -9,7 +9,7 @@ const Content = () => {
   useEffect(() => {
     const fetchLastUpdate = async () => {
       try {
-        const response = await fetch('https://asaburodesu.github.io/imas_map/last_update.json?timestamp=' + new Date().getTime(), {
+        const response = await fetch('https://asaburodesu.github.io/gigo_map/last_update.json?timestamp=' + new Date().getTime(), {
           cache: 'no-cache', // キャッシュを無効にする
         });
         if (!response.ok) {
@@ -66,4 +66,5 @@ const Content = () => {
 };
 
 export default Content;
+
 
