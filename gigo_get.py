@@ -16,7 +16,7 @@ def scrape_gigo_final_complete(max_count=None):
     }
 
     try:
-        response = requests.get(base_url, headers=headers, timeout=12)
+        response = requests.get(base_url, headers=headers, timeout=30)
         response.encoding = response.apparent_encoding
         soup = BeautifulSoup(response.text, 'html.parser')
     except Exception as e:
@@ -86,7 +86,7 @@ def scrape_gigo_final_complete(max_count=None):
                 time.sleep(1.2)
 
                 try:
-                    res_d = requests.get(detail_url, headers=headers, timeout=12)
+                    res_d = requests.get(detail_url, headers=headers, timeout=30)
                     res_d.encoding = res_d.apparent_encoding
                     soup_d = BeautifulSoup(res_d.text, 'html.parser')
 
@@ -192,8 +192,7 @@ def scrape_gigo_final_complete(max_count=None):
         "values": values
     }
 
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"gigo_shops_{timestamp}.json"
+    filename = "data.json"
     try:
         with open(filename, 'w', encoding='utf-8') as f:
             json.dump(result, f, ensure_ascii=False, indent=2)
@@ -219,3 +218,4 @@ if __name__ == "__main__":
     result = scrape_gigo_final_complete()
     
     print("\n--- 処理完了（JSON保存済み） ---")
+
