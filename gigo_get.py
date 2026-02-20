@@ -16,7 +16,7 @@ def scrape_gigo_final_complete(max_count=None):
     }
 
     try:
-        response = requests.get(base_url, headers=headers, timeout=30)
+        response = requests.get(base_url, headers=headers, timeout=12)
         response.encoding = response.apparent_encoding
         soup = BeautifulSoup(response.text, 'html.parser')
     except Exception as e:
@@ -44,6 +44,7 @@ def scrape_gigo_final_complete(max_count=None):
     skipped_closed = 0
     skipped_unknown_pref = 0
     skipped_no_coords = 0
+    skipped_golfbar = 0  # ← 新規追加
 
     for table in soup.find_all('table'):
         if max_count and count >= max_count:
@@ -85,27 +86,23 @@ def scrape_gigo_final_complete(max_count=None):
                 time.sleep(1.2)
 
                 try:
-                    res_d = requests.get(detail_url, headers=headers, timeout=30)
+                    res_d = requests.get(detail_url, headers=headers, timeout=12)
                     res_d.encoding = res_d.apparent_encoding
                     soup_d = BeautifulSoup(res_d.text, 'html.parser')
 
-                    # 店名取得： <strong>内のテキスト全体を優先（カタカナではなく普通の表記）
                     store_name_div = soup_d.find('div', class_='storeName')
                     if store_name_div:
                         strong_tag = store_name_div.find('strong')
                         if strong_tag:
-                            # <strong>GiGOちとせモール</strong> のように、カタカナ<p>を除いたメイン表記を取得
-                            # .get_text() で子要素含めてすべて取るが、<p>を除去してクリーンに
                             final_shop_name = strong_tag.get_text(strip=True)
-                            # 余分な改行やスペースを整理
                             final_shop_name = re.sub(r'\s+', ' ', final_shop_name).strip()
-                            # カタカナ部分（<p class="discription">）が先頭に来る場合、それを除去
                             discription_p = strong_tag.find('p', class_='discription')
                             if discription_p:
                                 kata_name = discription_p.get_text(strip=True)
                                 if final_shop_name.startswith(kata_name):
                                     final_shop_name = final_shop_name[len(kata_name):].strip()
 
+                    # 閉店チェック + THE GOLF BAR チェック
                     name_lower = final_shop_name.lower()
                     if any(word in name_lower for word in ['閉店', '閉鎖', 'closed']):
                         print(f"    → 閉店店舗と判断（スキップ）: {final_shop_name}")
@@ -113,7 +110,13 @@ def scrape_gigo_final_complete(max_count=None):
                         count -= 1
                         continue
 
-                    # 座標取得部分
+                    if "the golf bar" in name_lower:
+                        print(f"    → THE GOLF BAR店舗と判断（スキップ）: {final_shop_name}")
+                        skipped_golfbar += 1
+                        count -= 1
+                        continue
+
+                    # 座標取得部分（変更なし）
                     map_button = soup_d.find('input', {'type': 'button', 'value': 'マップ'})
                     if map_button and 'onclick' in map_button.attrs:
                         onclick_text = map_button['onclick']
@@ -189,13 +192,15 @@ def scrape_gigo_final_complete(max_count=None):
         "values": values
     }
 
-    filename = "data.json"
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    filename = f"gigo_shops_{timestamp}.json"
     try:
         with open(filename, 'w', encoding='utf-8') as f:
             json.dump(result, f, ensure_ascii=False, indent=2)
         print(f"\n全件データをJSONファイルとして保存しました: {filename}")
         print(f"保存件数: {len(values) - 1} 件")
         print(f"  └ 閉店スキップ: {skipped_closed} 件")
+        print(f"  └ THE GOLF BARスキップ: {skipped_golfbar} 件")
         print(f"  └ 都道府県不明スキップ: {skipped_unknown_pref} 件")
         print(f"  └ 座標未取得スキップ: {skipped_no_coords} 件")
     except Exception as e:
@@ -214,4 +219,3 @@ if __name__ == "__main__":
     result = scrape_gigo_final_complete()
     
     print("\n--- 処理完了（JSON保存済み） ---")
-
