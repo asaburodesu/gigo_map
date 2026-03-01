@@ -3,15 +3,15 @@
 
 name: build
 
-on:
-  push:
-    branches:
-      - 'master'
+#on:
+#  push:
+#    branches:
+#      - 'master'
 
   workflow_dispatch:
 
-  schedule:
-    - cron:  '30 20 * * *'
+#  schedule:
+#    - cron:  '30 20 * * *'
     # 毎日5時30分(JST)に実行
 
 permissions:
