@@ -3,7 +3,27 @@ import time
 import re
 import json
 import sys
+import html as html_lib
 from datetime import datetime
+from urllib.parse import unquote, urljoin
+
+
+JAPAN_LAT_RANGE = (20.0, 46.5)
+JAPAN_LNG_RANGE = (122.0, 154.5)
+
+
+def normalize_japan_coords(lat, lng):
+    """日本国内らしい緯度経度なら8桁固定の文字列で返す"""
+    try:
+        lat_num = float(lat)
+        lng_num = float(lng)
+    except (TypeError, ValueError):
+        return None
+
+    if (JAPAN_LAT_RANGE[0] <= lat_num <= JAPAN_LAT_RANGE[1] and
+            JAPAN_LNG_RANGE[0] <= lng_num <= JAPAN_LNG_RANGE[1]):
+        return f"{lat_num:.8f}", f"{lng_num:.8f}"
+    return None
 
 
 def extract_prefecture(address):
@@ -40,16 +60,90 @@ def parse_rsc_data_chunk(html):
     return []
 
 
+def extract_direct_query_coords(text):
+    """Google Maps URLの query=LAT,LNG 形式から座標を抽出する"""
+    decoded = unquote(html_lib.unescape(text))
+    for lat, lng in re.findall(
+            r'query=([+-]?\d+(?:\.\d+)?),([+-]?\d+(?:\.\d+)?)',
+            decoded):
+        coords = normalize_japan_coords(lat, lng)
+        if coords:
+            return coords
+    return None
+
+
+def extract_google_maps_url(page_html):
+    """詳細ページにあるGoogle Mapsリンクを抽出する"""
+    for href in re.findall(r'href="(https://www\.google\.com/maps/[^"]+)"',
+                           page_html):
+        return html_lib.unescape(href)
+    return None
+
+
+def extract_google_preview_url(google_html, base_url):
+    """Google Maps検索結果からpreview endpointのURLを抽出する"""
+    match = re.search(r'<link href="([^"]*?/maps/preview/place[^"]+)"',
+                      google_html)
+    if not match:
+        return None
+    return urljoin(base_url, html_lib.unescape(match.group(1)))
+
+
+def extract_coords_from_google_preview(preview_text):
+    """Google Maps previewレスポンスから日本国内の座標を抽出する"""
+    patterns = [
+        # preview内の店舗データ: [null,null,LAT,LNG]
+        r'\[null,null,([+-]?\d+(?:\.\d+)?),([+-]?\d+(?:\.\d+)?)\]',
+        # Google Mapsの共有URL断片: /@LAT,LNG,ZOOM
+        r'/@([+-]?\d+(?:\.\d+)?),([+-]?\d+(?:\.\d+)?),',
+        # dataパラメータ: !3dLAT!4dLNG
+        r'!3d([+-]?\d+(?:\.\d+)?)!4d([+-]?\d+(?:\.\d+)?)',
+    ]
+    for pattern in patterns:
+        for lat, lng in re.findall(pattern, preview_text):
+            coords = normalize_japan_coords(lat, lng)
+            if coords:
+                return coords
+    return None
+
+
+def get_coords_from_google_maps(maps_url, headers):
+    """Place ID形式のGoogle Mapsリンクから座標を取得する"""
+    try:
+        search_res = requests.get(maps_url, headers=headers, timeout=15)
+        search_res.raise_for_status()
+
+        preview_url = extract_google_preview_url(search_res.text,
+                                                 search_res.url)
+        if not preview_url:
+            return None
+
+        preview_headers = dict(headers)
+        preview_headers["Referer"] = maps_url
+        preview_res = requests.get(preview_url, headers=preview_headers,
+                                   timeout=15)
+        preview_res.raise_for_status()
+        return extract_coords_from_google_preview(preview_res.text)
+    except Exception as e:
+        print(f"    google maps error: {type(e).__name__}: {e}")
+    return None
+
+
 def get_coords_from_detail(slug, headers):
     """店舗詳細ページからGoogle Maps URLの緯度経度を取得する"""
     url = f"https://www.gigo.co.jp/shops/{slug}"
     try:
         res = requests.get(url, headers=headers, timeout=15)
         res.raise_for_status()
-        # Google Maps URL 内の query=LAT,LNG を抽出
-        coords = re.findall(r'query=([\d.-]+),([\d.-]+)', res.text)
+        # 旧形式のGoogle Maps URL: query=LAT,LNG
+        coords = extract_direct_query_coords(res.text)
         if coords:
-            return coords[0]  # (lat, lng)
+            return coords
+
+        # 新形式のGoogle Maps URL: query=NAME&query_place_id=...
+        maps_url = extract_google_maps_url(res.text)
+        if maps_url:
+            return get_coords_from_google_maps(maps_url, headers)
     except Exception as e:
         print(f"    detail page error ({slug}): {type(e).__name__}: {e}")
     return None
@@ -70,7 +164,8 @@ def scrape_gigo_shops():
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                       "AppleWebKit/537.36 (KHTML, like Gecko) "
-                      "Chrome/128.0.0.0 Safari/537.36"
+                      "Chrome/128.0.0.0 Safari/537.36",
+        "Accept-Language": "ja,en-US;q=0.9,en;q=0.8"
     }
     base_url = "https://www.gigo.co.jp/shops"
 
