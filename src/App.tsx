@@ -76,8 +76,10 @@ const App = () => {
   return (
     <div className="app">
       <div className="app-body">
+        {/* 地図はページを移動しても作り直さないよう、Routes の外に置いて残しておく */}
+        <Home data={shopList} />
         <Routes>
-          <Route path="/" element={<Home data={shopList} />} />
+          <Route path="/" element={null} />
           <Route path="/list" element={<List data={shopList} />} />
           <Route path="/category" element={<Category data={shopList} />} />
           <Route path="/images" element={<Images data={shopList} />} />

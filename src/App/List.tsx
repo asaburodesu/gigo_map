@@ -2,7 +2,7 @@ import React from "react";
 import ShopListItem from './ShopListItem'
 import Shop from './Shop'
 import './List.scss'
-import { useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { askGeolocationPermission } from '../geolocation'
 import * as turf from "@turf/turf"
@@ -128,7 +128,12 @@ const Content = (props: Props) => {
 
   return (
     <div id="shop-list" className="shop-list">
-      {queryCategory && <div className="shop-list-category">{`都道府県：「${queryCategory}」`}</div>}
+      {queryCategory &&
+        <div className="shop-list-category">
+          <span>{`都道府県：「${queryCategory}」`}</span>
+          <Link className="shop-list-map" to={`/?category=${encodeURIComponent(queryCategory)}`}>地図で見る</Link>
+        </div>
+      }
 
       <InfiniteScroll
         dataLength={list.length}

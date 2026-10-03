@@ -7,6 +7,8 @@ import Shop from './Shop'
 
 type Props = {
   data: Pwamap.ShopData[];
+  // true のときはデータが変わっても表示位置を動かさない（最初の表示を除く）
+  keepView?: boolean;
 };
 
 const CSS: React.CSSProperties = {
@@ -37,6 +39,7 @@ const Content = (props: Props) => {
   const mapNode = React.useRef<HTMLDivElement>(null);
   const [mapObject, setMapObject] = React.useState<any>()
   const [shop, setShop] = React.useState<Pwamap.ShopData | undefined>(undefined)
+  const isFitted = React.useRef(false)
 
   const addMarkers = (mapObject: any, data: any) => {
 
@@ -144,6 +147,16 @@ const Content = (props: Props) => {
   }
 
   React.useEffect(() => {
+    if (!mapObject) {
+      return
+    }
+
+    // マーカー追加済みの場合は表示するデータだけ差し替える（都道府県の絞り込みなど）
+    const source = mapObject.getSource('shops')
+    if (source) {
+      source.setData(toGeoJson(props.data))
+      return
+    }
 
     addMarkers(mapObject, props.data)
 
@@ -153,15 +166,22 @@ const Content = (props: Props) => {
     if (!mapObject || props.data.length === 0) {
       return
     }
+    if (props.keepView && isFitted.current) {
+      return
+    }
     const geojson = toGeoJson(props.data)
     const bounds = geojsonExtent(geojson)
 
     if (bounds) {
       mapObject.fitBounds(bounds, {
-        padding: 50
+        padding: 50,
+        // 店舗が 1 件だけの場合に拡大しすぎないようにする
+        maxZoom: 15,
+        animate: false,
       })
+      isFitted.current = true
     }
-  }, [mapObject, props.data])
+  }, [mapObject, props.data, props.keepView])
 
   React.useEffect(() => {
     // Only once reder the map.

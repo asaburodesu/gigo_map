@@ -1,0 +1,66 @@
+.home
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  // 大きさを変えると地図が描き直されるので、大きさはそのままで隠す
+  &.inactive
+  {
+    visibility: hidden;
+
+    // Geolonia の帰属表示は visibility: visible を指定していて隠れないので、地図のボタンごと消す
+    .maplibregl-control-container
+    {
+      display: none;
+    }
+  }
+
+  // 都道府県のバーと重ならないよう、右上の地図ボタンをバーの下にずらす
+  &.has-category .maplibregl-ctrl-top-right
+  {
+    top: 44px;
+  }
+}
+
+// 解除したときに地図の大きさが変わらないよう、バーは地図の上に重ねて表示する
+.map-category
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  background-color: var(--primary-color);
+  box-sizing: border-box;
+  height: 44px;
+  color: #ffffff;
+
+  .map-category-label
+  {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  a
+  {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    margin-left: 16px;
+    color: #ffffff;
+    white-space: nowrap;
+
+    svg
+    {
+      margin-right: 4px;
+    }
+  }
+}

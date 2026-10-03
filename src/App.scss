@@ -6,6 +6,7 @@ a
 
 .app-body
 {
+  position: relative;
   height: calc(100% - 50px - env(safe-area-inset-bottom));
 }
 // Hack for Edge to eliminate calc(env())
