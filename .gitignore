@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/.venv
 /.pnp
 .pnp.js
 
@@ -10,6 +11,9 @@
 
 # production
 /build
+
+# data (CI で生成 / ローカルでは npm run fetch-data で取得)
+/public/data.json
 
 # misc
 .DS_Store
