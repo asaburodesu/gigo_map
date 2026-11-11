@@ -1878,19 +1878,6 @@
       "",
       "東京都",
       "",
-      "35.55100360",
-      "139.73287430",
-      "GiGOマルエツ新糀谷",
-      "東京都大田区萩中2-12-5 マルエツ新糀谷店 2F",
-      "",
-      "https://twitter.com/intent/tweet?text=GiGOマルエツ新糀谷%20東京都大田区萩中2-12-5 マルエツ新糀谷店 2F",
-      "https://www.gigo.co.jp/shops/kojiya",
-      ""
-    ],
-    [
-      "",
-      "東京都",
-      "",
       "35.66009900",
       "139.70271560",
       "GiGO渋谷宮益坂",
@@ -2197,6 +2184,19 @@
       "",
       "https://twitter.com/intent/tweet?text=GiGOイトーヨーカドー武蔵小金井%20東京都小金井市本町6-14-9 イトーヨーカドー武蔵小金井店 4F",
       "https://www.gigo.co.jp/shops/musashi-koganei",
+      ""
+    ],
+    [
+      "",
+      "東京都",
+      "",
+      "35.74465840",
+      "139.32426250",
+      "GiGO福生",
+      "東京都福生市福生1076-1",
+      "",
+      "https://twitter.com/intent/tweet?text=GiGO福生%20東京都福生市福生1076-1",
+      "https://www.gigo.co.jp/shops/fussa",
       ""
     ],
     [
@@ -2697,32 +2697,6 @@
       "",
       "長野県",
       "",
-      "36.41274220",
-      "138.26197530",
-      "GiGO上田",
-      "長野県上田市上田1847-1",
-      "",
-      "https://twitter.com/intent/tweet?text=GiGO上田%20長野県上田市上田1847-1",
-      "https://www.gigo.co.jp/shops/ueda",
-      ""
-    ],
-    [
-      "",
-      "長野県",
-      "",
-      "36.39256170",
-      "138.25722770",
-      "GiGOイオンスタイル上田",
-      "長野県上田市常田2-12-18",
-      "",
-      "https://twitter.com/intent/tweet?text=GiGOイオンスタイル上田%20長野県上田市常田2-12-18",
-      "https://www.gigo.co.jp/shops/a-ueda",
-      ""
-    ],
-    [
-      "",
-      "長野県",
-      "",
       "36.06515580",
       "138.05304690",
       "GiGO岡谷",
@@ -2769,6 +2743,19 @@
       "",
       "https://twitter.com/intent/tweet?text=GiGOアクアウォーク大垣%20岐阜県大垣市林町6-80-21 アクアウォーク大垣 1F",
       "https://www.gigo.co.jp/shops/ogaki",
+      ""
+    ],
+    [
+      "",
+      "岐阜県",
+      "",
+      "36.14256750",
+      "137.24357330",
+      "GiGO高山",
+      "岐阜県高山市上岡本町7-7",
+      "",
+      "https://twitter.com/intent/tweet?text=GiGO高山%20岐阜県高山市上岡本町7-7",
+      "https://www.gigo.co.jp/shops/takayama",
       ""
     ],
     [
@@ -3555,19 +3542,6 @@
       "",
       "大阪府",
       "",
-      "34.73873480",
-      "135.47938920",
-      "GiGO新三国アルゴ７",
-      "大阪府豊中市神州町1-15 アルゴセブンビル 2F",
-      "",
-      "https://twitter.com/intent/tweet?text=GiGO新三国アルゴ７%20大阪府豊中市神州町1-15 アルゴセブンビル 2F",
-      "https://www.gigo.co.jp/shops/shin-mikuni",
-      ""
-    ],
-    [
-      "",
-      "大阪府",
-      "",
       "34.81957080",
       "135.67543290",
       "GiGO枚方",
@@ -3588,19 +3562,6 @@
       "",
       "https://twitter.com/intent/tweet?text=GiGOアル・プラザ枚方%20大阪府枚方市津田元町1丁目4番1号",
       "https://www.gigo.co.jp/shops/hirakata-tsuda",
-      ""
-    ],
-    [
-      "",
-      "大阪府",
-      "",
-      "34.83788140",
-      "135.55547510",
-      "GiGOアル・プラザ茨木",
-      "大阪府茨木市上郡2丁目12番地8号",
-      "",
-      "https://twitter.com/intent/tweet?text=GiGOアル・プラザ茨木%20大阪府茨木市上郡2丁目12番地8号",
-      "https://www.gigo.co.jp/shops/ibaraki-kamigori",
       ""
     ],
     [
@@ -4398,6 +4359,19 @@
     ],
     [
       "",
+      "福岡県",
+      "",
+      "33.86137300",
+      "130.63172190",
+      "GiGOイオン岡垣ショッピングセンター",
+      "福岡県遠賀郡岡垣町黒山338-1 イオン岡垣店内",
+      "",
+      "https://twitter.com/intent/tweet?text=GiGOイオン岡垣ショッピングセンター%20福岡県遠賀郡岡垣町黒山338-1 イオン岡垣店内",
+      "https://www.gigo.co.jp/shops/okagaki",
+      ""
+    ],
+    [
+      "",
       "佐賀県",
       "",
       "33.19936510",
@@ -4420,19 +4394,6 @@
       "",
       "https://twitter.com/intent/tweet?text=GiGOみらい長崎ココウォーク%20長崎県長崎市茂里町1-55 みらい長崎ココウォーク 5F",
       "https://www.gigo.co.jp/shops/nagasaki",
-      ""
-    ],
-    [
-      "",
-      "長崎県",
-      "",
-      "32.78395440",
-      "130.37233420",
-      "GiGOイオン島原ショッピングセンター",
-      "長崎県島原市弁天町1-7080-1 イオン島原店内",
-      "",
-      "https://twitter.com/intent/tweet?text=GiGOイオン島原ショッピングセンター%20長崎県島原市弁天町1-7080-1 イオン島原店内",
-      "https://www.gigo.co.jp/shops/shimabara",
       ""
     ],
     [
