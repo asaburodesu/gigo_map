@@ -97,32 +97,6 @@
       "",
       "北海道",
       "",
-      "43.76872310",
-      "142.37242150",
-      "GiGOメガセンタートライアル旭川",
-      "北海道旭川市6条通14丁目64 メガセンタートライアル旭川店 2F",
-      "",
-      "https://twitter.com/intent/tweet?text=GiGOメガセンタートライアル旭川%20北海道旭川市6条通14丁目64 メガセンタートライアル旭川店 2F",
-      "https://www.gigo.co.jp/shops/asahikawa",
-      ""
-    ],
-    [
-      "",
-      "北海道",
-      "",
-      "42.91951510",
-      "143.17457780",
-      "GiGOドリームタウン白樺",
-      "北海道帯広市白樺16条西2丁目 ドリームタウン白樺内",
-      "",
-      "https://twitter.com/intent/tweet?text=GiGOドリームタウン白樺%20北海道帯広市白樺16条西2丁目 ドリームタウン白樺内",
-      "https://www.gigo.co.jp/shops/shirakaba",
-      ""
-    ],
-    [
-      "",
-      "北海道",
-      "",
       "42.89042700",
       "143.19669830",
       "GiGO帯広稲田",
@@ -195,6 +169,19 @@
       "",
       "https://twitter.com/intent/tweet?text=GiGO八戸%20青森県八戸市城下4-25-14",
       "https://www.gigo.co.jp/shops/hachinohe",
+      ""
+    ],
+    [
+      "",
+      "岩手県",
+      "",
+      "38.93367590",
+      "141.11835610",
+      "GiGO一関",
+      "岩手県一関市山目中野92-1",
+      "",
+      "https://twitter.com/intent/tweet?text=GiGO一関%20岩手県一関市山目中野92-1",
+      "https://www.gigo.co.jp/shops/ichinoseki",
       ""
     ],
     [
@@ -338,6 +325,19 @@
       "",
       "https://twitter.com/intent/tweet?text=GiGO利府%20宮城県宮城郡利府町加瀬字新前谷地55-1 利府ペアガーデン内",
       "https://www.gigo.co.jp/shops/rifu",
+      ""
+    ],
+    [
+      "",
+      "秋田県",
+      "",
+      "39.70416800",
+      "140.10462440",
+      "GiGO秋田",
+      "秋田県秋田市茨島1-1-16",
+      "",
+      "https://twitter.com/intent/tweet?text=GiGO秋田%20秋田県秋田市茨島1-1-16",
+      "https://www.gigo.co.jp/shops/akita",
       ""
     ],
     [
@@ -988,6 +988,19 @@
       "",
       "https://twitter.com/intent/tweet?text=GiGOイオンモール浦和美園%20埼玉県さいたま市緑区美園5-50-1 イオンモール浦和美園 2F",
       "https://www.gigo.co.jp/shops/a-urawa-misono",
+      ""
+    ],
+    [
+      "",
+      "埼玉県",
+      "",
+      "35.90805670",
+      "139.48318460",
+      "GiGOアトレ川越",
+      "埼玉県川越市脇田町105番地 アトレ川越 1F",
+      "",
+      "https://twitter.com/intent/tweet?text=GiGOアトレ川越%20埼玉県川越市脇田町105番地 アトレ川越 1F",
+      "https://www.gigo.co.jp/shops/kawagoe",
       ""
     ],
     [
@@ -2931,19 +2944,6 @@
       "",
       "愛知県",
       "",
-      "35.16227040",
-      "136.88500320",
-      "GiGOマーケットスクエアささしま",
-      "愛知県名古屋市中村区平池町4-60-14 マーケットスクエアささしま 1F",
-      "",
-      "https://twitter.com/intent/tweet?text=GiGOマーケットスクエアささしま%20愛知県名古屋市中村区平池町4-60-14 マーケットスクエアささしま 1F",
-      "https://www.gigo.co.jp/shops/sasashima",
-      ""
-    ],
-    [
-      "",
-      "愛知県",
-      "",
       "35.14266290",
       "136.90226910",
       "GiGO金山",
@@ -2951,19 +2951,6 @@
       "",
       "https://twitter.com/intent/tweet?text=GiGO金山%20愛知県名古屋市熱田区金山1-19-2",
       "https://www.gigo.co.jp/shops/kanayama",
-      ""
-    ],
-    [
-      "",
-      "愛知県",
-      "",
-      "34.74901540",
-      "137.41391400",
-      "GiGO豊橋飯村",
-      "愛知県豊橋市飯村町字西山25-121",
-      "",
-      "https://twitter.com/intent/tweet?text=GiGO豊橋飯村%20愛知県豊橋市飯村町字西山25-121",
-      "https://www.gigo.co.jp/shops/toyohashi-imure",
       ""
     ],
     [
@@ -3770,6 +3757,19 @@
       "",
       "https://twitter.com/intent/tweet?text=GiGO三宮北口%20兵庫県神戸市中央区北長狭通1丁目8-1 コスモビル B1-2",
       "https://www.gigo.co.jp/shops/sannomiya-kitaguchi",
+      ""
+    ],
+    [
+      "",
+      "兵庫県",
+      "",
+      "34.82887510",
+      "134.69114810",
+      "GiGO姫路駅前",
+      "兵庫県姫路市駅前町254 姫路OSビル B1",
+      "",
+      "https://twitter.com/intent/tweet?text=GiGO姫路駅前%20兵庫県姫路市駅前町254 姫路OSビル B1",
+      "https://www.gigo.co.jp/shops/himeji-ekimae",
       ""
     ],
     [
