@@ -292,19 +292,6 @@
       "",
       "宮城県",
       "",
-      "38.42923730",
-      "141.28528840",
-      "GiGO石巻",
-      "宮城県石巻市大街道東4-1-45",
-      "",
-      "https://twitter.com/intent/tweet?text=GiGO石巻%20宮城県石巻市大街道東4-1-45",
-      "https://www.gigo.co.jp/shops/ishinomaki",
-      ""
-    ],
-    [
-      "",
-      "宮城県",
-      "",
       "38.15656640",
       "140.88843850",
       "GiGO名取",
@@ -325,19 +312,6 @@
       "",
       "https://twitter.com/intent/tweet?text=GiGOホームセンタームサシ名取%20宮城県名取市愛島郷1-1-1 ホームセンタームサシ名取店 2F",
       "https://www.gigo.co.jp/shops/natori-medeshimanosato",
-      ""
-    ],
-    [
-      "",
-      "宮城県",
-      "",
-      "38.69041240",
-      "141.18916370",
-      "GiGO佐沼",
-      "宮城県登米市迫町佐沼中江2-5-8",
-      "",
-      "https://twitter.com/intent/tweet?text=GiGO佐沼%20宮城県登米市迫町佐沼中江2-5-8",
-      "https://www.gigo.co.jp/shops/sanuma",
       ""
     ],
     [
@@ -403,19 +377,6 @@
       "",
       "https://twitter.com/intent/tweet?text=GiGOヨークベニマル米沢%20山形県米沢市駅前3-1-18 ヨークベニマル米沢店内",
       "https://www.gigo.co.jp/shops/yonezawa-ekimae",
-      ""
-    ],
-    [
-      "",
-      "山形県",
-      "",
-      "38.76417210",
-      "140.30895100",
-      "GiGO新庄",
-      "山形県新庄市金沢1068",
-      "",
-      "https://twitter.com/intent/tweet?text=GiGO新庄%20山形県新庄市金沢1068",
-      "https://www.gigo.co.jp/shops/shinjo",
       ""
     ],
     [
@@ -1982,6 +1943,19 @@
       "",
       "東京都",
       "",
+      "35.68468950",
+      "139.86395890",
+      "GiGO船堀",
+      "東京都江戸川区船堀1-6-11",
+      "",
+      "https://twitter.com/intent/tweet?text=GiGO船堀%20東京都江戸川区船堀1-6-11",
+      "https://www.gigo.co.jp/shops/funabori",
+      ""
+    ],
+    [
+      "",
+      "東京都",
+      "",
       "35.66522480",
       "139.85929340",
       "GiGO西葛西",
@@ -2028,6 +2002,19 @@
       "",
       "https://twitter.com/intent/tweet?text=GiGOイトーヨーカドー八王子%20東京都八王子市狭間町1462-1 イトーヨーカドー八王子 3F",
       "https://www.gigo.co.jp/shops/hachioji-hazama",
+      ""
+    ],
+    [
+      "",
+      "東京都",
+      "",
+      "35.66505410",
+      "139.36648000",
+      "GiGO八王子高倉",
+      "東京都八王子市高倉町55-4",
+      "",
+      "https://twitter.com/intent/tweet?text=GiGO八王子高倉%20東京都八王子市高倉町55-4",
+      "https://www.gigo.co.jp/shops/hachioji-takakura",
       ""
     ],
     [
@@ -2795,6 +2782,19 @@
       "",
       "https://twitter.com/intent/tweet?text=GiGOマーゴ関%20岐阜県関市倉知516番地 マーゴシネマ館  2F",
       "https://www.gigo.co.jp/shops/seki",
+      ""
+    ],
+    [
+      "",
+      "岐阜県",
+      "",
+      "35.39793250",
+      "136.90480820",
+      "GiGOアピタ各務原",
+      "岐阜県各務原市鵜沼各務原町8-7 アピタ各務原店 2F",
+      "",
+      "https://twitter.com/intent/tweet?text=GiGOアピタ各務原%20岐阜県各務原市鵜沼各務原町8-7 アピタ各務原店 2F",
+      "https://www.gigo.co.jp/shops/kakamigahara",
       ""
     ],
     [
