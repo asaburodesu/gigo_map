@@ -292,6 +292,19 @@
       "",
       "宮城県",
       "",
+      "38.42923730",
+      "141.28528840",
+      "GiGO石巻",
+      "宮城県石巻市大街道東4-1-45",
+      "",
+      "https://twitter.com/intent/tweet?text=GiGO石巻%20宮城県石巻市大街道東4-1-45",
+      "https://www.gigo.co.jp/shops/ishinomaki",
+      ""
+    ],
+    [
+      "",
+      "宮城県",
+      "",
       "38.15656640",
       "140.88843850",
       "GiGO名取",
@@ -312,6 +325,19 @@
       "",
       "https://twitter.com/intent/tweet?text=GiGOホームセンタームサシ名取%20宮城県名取市愛島郷1-1-1 ホームセンタームサシ名取店 2F",
       "https://www.gigo.co.jp/shops/natori-medeshimanosato",
+      ""
+    ],
+    [
+      "",
+      "宮城県",
+      "",
+      "38.69041240",
+      "141.18916370",
+      "GiGO佐沼",
+      "宮城県登米市迫町佐沼中江2-5-8",
+      "",
+      "https://twitter.com/intent/tweet?text=GiGO佐沼%20宮城県登米市迫町佐沼中江2-5-8",
+      "https://www.gigo.co.jp/shops/sanuma",
       ""
     ],
     [
@@ -383,6 +409,19 @@
       "",
       "山形県",
       "",
+      "38.76417210",
+      "140.30895100",
+      "GiGO新庄",
+      "山形県新庄市金沢1068",
+      "",
+      "https://twitter.com/intent/tweet?text=GiGO新庄%20山形県新庄市金沢1068",
+      "https://www.gigo.co.jp/shops/shinjo",
+      ""
+    ],
+    [
+      "",
+      "山形県",
+      "",
       "38.34302460",
       "140.37404050",
       "GiGO天童",
@@ -442,19 +481,6 @@
       "",
       "https://twitter.com/intent/tweet?text=GiGO福島南%20福島県福島市黒岩字中島7番2号",
       "https://www.gigo.co.jp/shops/fukushima-minami",
-      ""
-    ],
-    [
-      "",
-      "福島県",
-      "",
-      "37.51834050",
-      "139.92197860",
-      "GiGO会津若松",
-      "福島県会津若松市町北町大字上荒久田字宮下142",
-      "",
-      "https://twitter.com/intent/tweet?text=GiGO会津若松%20福島県会津若松市町北町大字上荒久田字宮下142",
-      "https://www.gigo.co.jp/shops/aizuwakamatsu",
       ""
     ],
     [
@@ -793,19 +819,6 @@
       "",
       "https://twitter.com/intent/tweet?text=GiGOけやきウォーク前橋%20群馬県前橋市文京町2-1-1 アピタけやきウォーク前橋店 2F",
       "https://www.gigo.co.jp/shops/maebashi",
-      ""
-    ],
-    [
-      "",
-      "群馬県",
-      "",
-      "36.30974030",
-      "139.05440370",
-      "GiGOアピタ高崎",
-      "群馬県高崎市矢中町668-1 アピタ高崎店 2F",
-      "",
-      "https://twitter.com/intent/tweet?text=GiGOアピタ高崎%20群馬県高崎市矢中町668-1 アピタ高崎店 2F",
-      "https://www.gigo.co.jp/shops/takasaki-yanaka",
       ""
     ],
     [
@@ -2567,8 +2580,8 @@
       "",
       "新潟県",
       "",
-      "37.46101280",
-      "138.82696990",
+      "37.46156210",
+      "138.82781170",
       "GiGOリバーサイド千秋",
       "新潟県長岡市千秋2-278 アピタRIVERSIDESENSHU長岡店 2F",
       "",
@@ -3289,19 +3302,6 @@
       "",
       "https://twitter.com/intent/tweet?text=GiGOアル・プラザ八日市%20滋賀県東近江市八日市浜野町3-1 ショッピングプラザアピア 4F",
       "https://www.gigo.co.jp/shops/shiga-yokaichi",
-      ""
-    ],
-    [
-      "",
-      "京都府",
-      "",
-      "35.00713820",
-      "135.76735710",
-      "GiGO京都新京極",
-      "京都府京都市中京区新京極六角下る桜之町441番地2 ARISTO新京極",
-      "",
-      "https://twitter.com/intent/tweet?text=GiGO京都新京極%20京都府京都市中京区新京極六角下る桜之町441番地2 ARISTO新京極",
-      "https://www.gigo.co.jp/shops/shinkyogoku",
       ""
     ],
     [
@@ -4160,19 +4160,6 @@
       "",
       "https://twitter.com/intent/tweet?text=GiGO福山%20広島県福山市瀬戸町山北300",
       "https://www.gigo.co.jp/shops/fukuyama",
-      ""
-    ],
-    [
-      "",
-      "広島県",
-      "",
-      "34.80376590",
-      "132.85864760",
-      "GiGOサングリーン",
-      "広島県三次市十日市東4丁目1-30 サングリーン 1F",
-      "",
-      "https://twitter.com/intent/tweet?text=GiGOサングリーン%20広島県三次市十日市東4丁目1-30 サングリーン 1F",
-      "https://www.gigo.co.jp/shops/miyoshi",
       ""
     ],
     [
