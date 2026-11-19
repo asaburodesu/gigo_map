@@ -487,6 +487,19 @@
       "",
       "福島県",
       "",
+      "37.51834050",
+      "139.92197860",
+      "GiGO会津若松",
+      "福島県会津若松市町北町大字上荒久田字宮下142",
+      "",
+      "https://twitter.com/intent/tweet?text=GiGO会津若松%20福島県会津若松市町北町大字上荒久田字宮下142",
+      "https://www.gigo.co.jp/shops/aizuwakamatsu",
+      ""
+    ],
+    [
+      "",
+      "福島県",
+      "",
       "37.44813980",
       "140.38040090",
       "GiGO日和田",
@@ -819,6 +832,19 @@
       "",
       "https://twitter.com/intent/tweet?text=GiGOけやきウォーク前橋%20群馬県前橋市文京町2-1-1 アピタけやきウォーク前橋店 2F",
       "https://www.gigo.co.jp/shops/maebashi",
+      ""
+    ],
+    [
+      "",
+      "群馬県",
+      "",
+      "36.30974030",
+      "139.05440370",
+      "GiGOアピタ高崎",
+      "群馬県高崎市矢中町668-1 アピタ高崎店 2F",
+      "",
+      "https://twitter.com/intent/tweet?text=GiGOアピタ高崎%20群馬県高崎市矢中町668-1 アピタ高崎店 2F",
+      "https://www.gigo.co.jp/shops/takasaki-yanaka",
       ""
     ],
     [
@@ -1670,19 +1696,6 @@
       "",
       "東京都",
       "",
-      "35.66273440",
-      "139.73225260",
-      "GiGO六本木芋洗坂",
-      "東京都港区六本木6-1-3 六門ビル 1F",
-      "",
-      "https://twitter.com/intent/tweet?text=GiGO六本木芋洗坂%20東京都港区六本木6-1-3 六門ビル 1F",
-      "https://www.gigo.co.jp/shops/roppongi-imoarai-zaka",
-      ""
-    ],
-    [
-      "",
-      "東京都",
-      "",
       "35.70104700",
       "139.74199800",
       "GiGO神楽坂",
@@ -2028,19 +2041,6 @@
       "",
       "https://twitter.com/intent/tweet?text=GiGO八王子高倉%20東京都八王子市高倉町55-4",
       "https://www.gigo.co.jp/shops/hachioji-takakura",
-      ""
-    ],
-    [
-      "",
-      "東京都",
-      "",
-      "35.69749090",
-      "139.41435840",
-      "GiGO立川",
-      "東京都立川市柴崎町3-2-1 サザンビル 1F",
-      "",
-      "https://twitter.com/intent/tweet?text=GiGO立川%20東京都立川市柴崎町3-2-1 サザンビル 1F",
-      "https://www.gigo.co.jp/shops/tachikawa",
       ""
     ],
     [
@@ -2418,19 +2418,6 @@
       "",
       "https://twitter.com/intent/tweet?text=GiGO相模原ラクーン%20神奈川県相模原市中央区小山1-1-14 相模原ラクーン 1F",
       "https://www.gigo.co.jp/shops/sagamihara-oyama",
-      ""
-    ],
-    [
-      "",
-      "神奈川県",
-      "",
-      "35.57354210",
-      "139.37102120",
-      "GiGO相模原",
-      "神奈川県相模原市中央区中央2-1-5 ムトス内",
-      "",
-      "https://twitter.com/intent/tweet?text=GiGO相模原%20神奈川県相模原市中央区中央2-1-5 ムトス内",
-      "https://www.gigo.co.jp/shops/sagamihara",
       ""
     ],
     [
@@ -3308,6 +3295,19 @@
       "",
       "京都府",
       "",
+      "35.00713820",
+      "135.76735710",
+      "GiGO京都新京極",
+      "京都府京都市中京区新京極六角下る桜之町441番地2 ARISTO新京極",
+      "",
+      "https://twitter.com/intent/tweet?text=GiGO京都新京極%20京都府京都市中京区新京極六角下る桜之町441番地2 ARISTO新京極",
+      "https://www.gigo.co.jp/shops/shinkyogoku",
+      ""
+    ],
+    [
+      "",
+      "京都府",
+      "",
       "35.00438540",
       "135.76900190",
       "GiGO河原町オーパ",
@@ -3510,19 +3510,6 @@
       "",
       "https://twitter.com/intent/tweet?text=GiGOアリオ鳳%20大阪府堺市西区鳳南町3-199-12 アリオ鳳店 3F",
       "https://www.gigo.co.jp/shops/otori",
-      ""
-    ],
-    [
-      "",
-      "大阪府",
-      "",
-      "34.54118720",
-      "135.46498580",
-      "GiGOイトーヨーカドー津久野",
-      "大阪府堺市西区下田町20-1 イトーヨーカドー津久野店 2F",
-      "",
-      "https://twitter.com/intent/tweet?text=GiGOイトーヨーカドー津久野%20大阪府堺市西区下田町20-1 イトーヨーカドー津久野店 2F",
-      "https://www.gigo.co.jp/shops/tsukuno",
       ""
     ],
     [
@@ -3776,8 +3763,8 @@
       "",
       "兵庫県",
       "",
-      "34.82887510",
-      "134.69114810",
+      "34.82878160",
+      "134.69105080",
       "GiGO姫路駅前",
       "兵庫県姫路市駅前町254 姫路OSビル B1",
       "",
@@ -4166,6 +4153,19 @@
       "",
       "広島県",
       "",
+      "34.80376590",
+      "132.85864760",
+      "GiGOサングリーン",
+      "広島県三次市十日市東4丁目1-30 サングリーン 1F",
+      "",
+      "https://twitter.com/intent/tweet?text=GiGOサングリーン%20広島県三次市十日市東4丁目1-30 サングリーン 1F",
+      "https://www.gigo.co.jp/shops/miyoshi",
+      ""
+    ],
+    [
+      "",
+      "広島県",
+      "",
       "34.36766200",
       "132.53366900",
       "GiGO海田",
@@ -4212,19 +4212,6 @@
       "",
       "https://twitter.com/intent/tweet?text=GiGO高松%20香川県高松市勅使町山王535",
       "https://www.gigo.co.jp/shops/takamatsu",
-      ""
-    ],
-    [
-      "",
-      "香川県",
-      "",
-      "34.35202920",
-      "134.00518000",
-      "GiGOイオンモール高松",
-      "香川県高松市香西本町1-1 イオンモール高松 2F 227-2",
-      "",
-      "https://twitter.com/intent/tweet?text=GiGOイオンモール高松%20香川県高松市香西本町1-1 イオンモール高松 2F 227-2",
-      "https://www.gigo.co.jp/shops/a-takamatsu",
       ""
     ],
     [
