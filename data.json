@@ -292,19 +292,6 @@
       "",
       "宮城県",
       "",
-      "38.42923730",
-      "141.28528840",
-      "GiGO石巻",
-      "宮城県石巻市大街道東4-1-45",
-      "",
-      "https://twitter.com/intent/tweet?text=GiGO石巻%20宮城県石巻市大街道東4-1-45",
-      "https://www.gigo.co.jp/shops/ishinomaki",
-      ""
-    ],
-    [
-      "",
-      "宮城県",
-      "",
       "38.15656640",
       "140.88843850",
       "GiGO名取",
@@ -351,6 +338,19 @@
       "",
       "https://twitter.com/intent/tweet?text=GiGO利府%20宮城県宮城郡利府町加瀬字新前谷地55-1 利府ペアガーデン内",
       "https://www.gigo.co.jp/shops/rifu",
+      ""
+    ],
+    [
+      "",
+      "秋田県",
+      "",
+      "39.70416800",
+      "140.10462440",
+      "GiGO秋田",
+      "秋田県秋田市茨島1-1-16",
+      "",
+      "https://twitter.com/intent/tweet?text=GiGO秋田%20秋田県秋田市茨島1-1-16",
+      "https://www.gigo.co.jp/shops/akita",
       ""
     ],
     [
@@ -2216,19 +2216,6 @@
       "",
       "東京都",
       "",
-      "35.74635150",
-      "139.38481340",
-      "GiGOイオンモールむさし村山",
-      "東京都武蔵村山市榎1-1-3",
-      "",
-      "https://twitter.com/intent/tweet?text=GiGOイオンモールむさし村山%20東京都武蔵村山市榎1-1-3",
-      "https://www.gigo.co.jp/shops/a-musashimurayama",
-      ""
-    ],
-    [
-      "",
-      "東京都",
-      "",
       "35.64958000",
       "139.44694460",
       "GiGOヴィータモールせいせき",
@@ -2821,6 +2808,19 @@
       "",
       "https://twitter.com/intent/tweet?text=GiGOアピタ各務原%20岐阜県各務原市鵜沼各務原町8-7 アピタ各務原店 2F",
       "https://www.gigo.co.jp/shops/kakamigahara",
+      ""
+    ],
+    [
+      "",
+      "岐阜県",
+      "",
+      "35.42697870",
+      "137.06397020",
+      "GiGOドン･キホーテUNY可児",
+      "岐阜県可児市中恵土字溝向2120番1 ドン･キホーテUNY可児店内",
+      "",
+      "https://twitter.com/intent/tweet?text=GiGOドン･キホーテUNY可児%20岐阜県可児市中恵土字溝向2120番1 ドン･キホーテUNY可児店内",
+      "https://www.gigo.co.jp/shops/d-kani",
       ""
     ],
     [
@@ -3867,8 +3867,8 @@
       "",
       "兵庫県",
       "",
-      "34.72892400",
-      "134.84926900",
+      "34.72789850",
+      "134.84860160",
       "GiGOアリオ加古川",
       "兵庫県加古川市別府町緑町2 アリオ加古川店3F",
       "",
@@ -4368,6 +4368,19 @@
       "",
       "https://twitter.com/intent/tweet?text=GiGOゆめタウン飯塚%20福岡県飯塚市菰田西3-6-1 ゆめタウン飯塚 3F",
       "https://www.gigo.co.jp/shops/iizuka",
+      ""
+    ],
+    [
+      "",
+      "福岡県",
+      "",
+      "33.82308270",
+      "130.72171850",
+      "GiGO中間",
+      "福岡県中間市蓮花寺3-1-1 プラザモールなかま 1-2F",
+      "",
+      "https://twitter.com/intent/tweet?text=GiGO中間%20福岡県中間市蓮花寺3-1-1 プラザモールなかま 1-2F",
+      "https://www.gigo.co.jp/shops/nakama",
       ""
     ],
     [
